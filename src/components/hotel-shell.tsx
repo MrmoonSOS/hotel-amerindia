@@ -1,0 +1,6 @@
+import { Link, NavLink } from 'react-router';
+
+const logo = 'https://horizons-cdn.hostinger.com/ba6f6edc-ea48-4b8b-b639-0a9fb675ea1d/3692afd38e5e9b057044a507a29a88d2.png';
+export function HotelShell({ children }: { children: React.ReactNode }) {
+ return <><header className="header"><Link className="brand" to="/#inicio"><img src={logo} alt="Logo Hotel Amerindia"/><span>AMERINDIA<small>COMODIDAD A TU ALCANCE</small></span></Link><nav aria-label="Navegación principal"><NavLink to="/" end>Inicio</NavLink><Link to="/#bienvenidos">El hotel</Link><Link to="/#habitaciones">Habitaciones</Link><Link to="/#entorno">El entorno</Link><NavLink to="/correcciones">Correcciones</NavLink><NavLink to="/entregable">Entregable</NavLink></nav><Link className="header-cta" to="/#contacto">Hablemos de tu estancia ↗</Link></header><nav className="page-tabs" aria-label="Páginas"><NavLink to="/" end>Inicio</NavLink><NavLink to="/correcciones">Correcciones</NavLink><NavLink to="/entregable">Entregable</NavLink></nav>{children}<footer><Link className="brand" to="/#inicio"><img alt="" src={logo}/><span>AMERINDIA<small>COMODIDAD A TU ALCANCE</small></span></Link><Link to="/#contacto">Contacto y consultas ↗</Link><small>© 2026 Hotel Amerindia</small></footer></>;
+}

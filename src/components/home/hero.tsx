@@ -1,0 +1,3 @@
+export function Hero() {
+ return <section className="hero" id="inicio"><img className="hero-photo" src="https://horizons-cdn.hostinger.com/ba6f6edc-ea48-4b8b-b639-0a9fb675ea1d/lobby-l0ZOC.jpeg" alt="Sala del Hotel Amerindia con luz natural"/><div className="hero-shade"/><div className="hero-copy"><span className="eyebrow">HOTEL AMERINDIA · </span><h1>Hay lugares que<br/>invitan a <em>quedarse.</em></h1><p>Un descanso sin prisas. Un trato cercano.<br/>Y esa tranquilidad que solo se encuentra en un aca.</p><a className="button" href="#contacto">Consultar disponibilidad <span>↗</span></a></div><div className="hero-bottom"><span>Un lugar para bajar el ritmo.</span><a href="#bienvenidos">Descubre Amerindia ↓</a></div></section>;
+}
