@@ -108,6 +108,13 @@ export const userStories: UserStory[] = [
    {dado:'que el huésped encuentra un problema (limpieza, daños o servicios)',cuando:'lo reporta',entonces:'el sistema lo registra y notifica a recepción para atenderlo.'},
    {dado:'que el huésped no confirma en un plazo definido',cuando:'pasa el tiempo',entonces:'el sistema deja la recepción como "pendiente de confirmar".'},
   ]},
+ {id:'HU-13',title:'Modificar fecha de reserva',epic:'Reservar habitación',priority:'Should',
+  story:['Como huésped con una reserva en el Hotel Amerindia,','quiero modificar las fechas de mi reserva desde el chatbot,','para ajustar mi estadía si cambian mis planes sin tener que cancelar y volver a reservar.'],
+  criteria:[
+   {dado:'que el usuario tiene una reserva activa',cuando:'ingresa su código e indica las nuevas fechas de llegada y salida',entonces:'el chatbot verifica la disponibilidad y le muestra el nuevo valor total para que confirme el cambio.'},
+   {dado:'que el usuario confirma el cambio',cuando:'el chatbot lo procesa',entonces:'actualiza las fechas de la reserva, libera las fechas anteriores y envía un mensaje con los nuevos datos.'},
+   {dado:'que no hay disponibilidad en las nuevas fechas o la fecha de llegada ya pasó',cuando:'el usuario intenta modificar',entonces:'el chatbot le informa que no es posible, mantiene la reserva original y le ofrece otras fechas o hablar con recepción.'},
+  ]},
 ];
 
 export const expectedBenefits = 'La implementación del chatbot de reservas permitirá al Hotel Amerindia atender a los turistas a cualquier hora, sin depender de la línea telefónica ni de que un recepcionista esté libre. Con esto se espera aumentar las reservas concretadas, reducir los errores en el registro de datos y liberar tiempo del personal para otras tareas, mejorando la experiencia del turista y la competitividad del hotel frente a las plataformas en línea.';
