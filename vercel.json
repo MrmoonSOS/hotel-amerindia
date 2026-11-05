@@ -3,5 +3,9 @@
 	"framework": null,
 	"buildCommand": "npm run build",
 	"outputDirectory": "build/client",
+	"redirects": [
+		{ "source": "/correcciones", "destination": "/contexto", "permanent": false },
+		{ "source": "/entregable", "destination": "/bpmn", "permanent": false }
+	],
 	"rewrites": [{ "source": "/(.*)", "destination": "/__spa-fallback.html" }]
 }

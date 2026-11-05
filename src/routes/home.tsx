@@ -1,6 +1,6 @@
 import type { Route } from './+types/home';
 import { seo } from '@/lib/seo';
-import { HotelShell } from '@/components/hotel-shell';
+import { HotelShell } from '@/components/layout/hotel-shell';
 import { Hero } from '@/components/home/hero';
 import { Welcome } from '@/components/home/welcome';
 import { Rooms } from '@/components/home/rooms';
