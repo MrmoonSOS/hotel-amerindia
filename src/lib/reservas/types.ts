@@ -19,6 +19,7 @@ export type Reservation = {
 	guestName: string;
 	document: string;
 	phone: string;
+	email: string;
 	roomNumber: number;
 	checkIn: string;
 	checkOut: string;
@@ -28,12 +29,18 @@ export type Reservation = {
 	checkedInAt?: string;
 	checkedOutAt?: string;
 	cancelledAt?: string;
+	updatedAt?: string;
 };
 
-export type ReservationInput = {
+/** Datos personales del huésped (HU-03; recepción puede corregirlos en HU-10). */
+export type GuestData = {
 	guestName: string;
 	document: string;
 	phone: string;
+	email: string;
+};
+
+export type ReservationInput = GuestData & {
 	checkIn: string;
 	checkOut: string;
 	guests: number | '';
